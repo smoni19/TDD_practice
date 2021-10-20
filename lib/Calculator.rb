@@ -27,4 +27,18 @@ class Calculator
     end
     return fact
   end
+
+  def return_largest(nums)
+    return nums.max
+  end
+  
+  def return_evens(nums)
+    evens = []
+    nums.each do | num |
+      if num % 2 == 0
+        evens << num
+      end
+    end
+    return evens
+  end
 end

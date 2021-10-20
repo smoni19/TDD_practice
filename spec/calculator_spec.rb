@@ -25,4 +25,14 @@ describe Calculator do
     calculator = Calculator.new
     expect(calculator.factorial(5)).to eq 120
   end
+
+  it 'can return the larger of four given numbers' do
+    calculator = Calculator.new
+    expect(calculator.return_largest([1, 100, 25, 74])).to eq 100
+  end
+
+  it 'can return the even numbers from an array of odd and even numbers' do
+    calculator = Calculator.new
+    expect(calculator.return_evens([1, 2, 3, 4, 5, 6])).to eq [2, 4, 6]
+  end
 end
